@@ -1,0 +1,9 @@
+.single_faq_tab_content p {
+    display: none; /* Hide the p tag by default */
+    transition: opacity 0.5s ease-in-out; /* Add a smooth opacity transition */
+}
+
+.show-content .single_faq_tab_content p {
+    display: block; /* Show the p tag when the parent has the class "show-content" */
+    opacity: 1; /* Ensure full opacity when displayed */
+}

@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webrito || Shopify & WordPress Expert Team</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/Faq.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -14,23 +16,26 @@
         WR: Header Area Start
         ----------------------------->
     <header class="header_area">
+        <div class="header_top_area">
+            
+        </div>
         <!-- 
         WR: Header Top Start
         ----------------------------->
-        <div class="header_top">
+        <div id="header-sticky" class="header_menu_area">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-xl-2 col-md-2">
                         <div class="logo">
                             <a href="">
-                                <img src="" alt="logo">
+                                <img src="assets/img/logo/Logo.png" alt="logo">
                             </a>
                         </div>
                     </div>
                     <!-- 
                          WR: Header Main Menu Start
                             ----------------------------->
-                    <div class="col-lg-8">
+                    <div class="col-lg-7 col-xl-7 col-md-7">
                         <div class="main_menu">
                             <ul>
                                 <li><a href="">Home</a></li>
@@ -45,12 +50,13 @@
                     <!-- 
                          WR: Header CTA
                             ----------------------------->
-                    <div class="col-lg-2">
+                    <div class="col-lg-3 col-xl-3 col-md-3">
                         <div class="header_cta">
-                            <div class="ul">
-                                <li><a href=""></a></li>
-                                <li><a href="">Support</a></li>
-                            </div>
+                            <a href="" class="icon"><i class="fa-solid fa-phone"></i></a>
+                            <a class="webrito-btn" href="#">
+                                    <span class="previous-text">Contact Us</span>
+                                    <i class="fa-regular fa-envelope"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -61,18 +67,18 @@
     <!-- 
         WR: Hero Area
         ----------------------------->
-   <section>
-        <div class="hero-area">
+   <section class="section_padding hero_area">
+        <div class="hero_area_content">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-lg-7 col-xl-7 col-md-7">
                         <div class="hero_content_lft">
-                            <h2>Let’s Build Your Next Website With <span>WordPress</span></h2>
-                            <button><a href="">Hire Us Now</a></button>
-                            <button><a href="">Call Us Now</a></button>
+                            <h2>Let’s Build Your <br> Next Website <br> With <span>WordPress</span></h2>
+                            <a class="webrito-btn" href="">Hire Us Now<i class="fa-solid fa-paper-plane"></i></a>
+                            <a class="webrito-btn bg_white_bordered" href="">Call Us Now<i class="fa-solid fa-phone"></i></a>
                         </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 col-xl-5 col-md-5">
                         <div class="hero_content_right">
 
                         </div>
@@ -86,25 +92,26 @@
         WR: Brand Service Slider Start
         ----------------------------->
 
-    <section>
-        <div class="brand_service_slider owl-carousel">
+    <section class="section_padding service_slider_area">
+        <div class="brand_service_slider">
             <div class="single_brand_service_slider">
-                <h2><a href="">PSD to WordPress</a></h2>
+                <h2>PSD to WordPress  <i class="fa-solid fa-arrow-trend-up"></i></h2>
+               
             </div>
             <div class="single_brand_service_slider">
-                <h2><a href="">PSD To HTML</a></h2>
+                <h2>PSD To HTML <i class="fa-solid fa-arrow-trend-up"></i></h2>
             </div>
             <div class="single_brand_service_slider">
-                <h2><a href="">PSD To Shopify</a></h2>
+                <h2>PSD To Shopify <i class="fa-solid fa-arrow-trend-up"></i></h2>
             </div>
             <div class="single_brand_service_slider">
-                <h2><a href="">PSD to WordPress</a></h2>
+                <h2>PSD to WordPress <i class="fa-solid fa-arrow-trend-up"></i></h2>
             </div>
             <div class="single_brand_service_slider">
-                <h2><a href="">PSD To Shopify</a></h2>
+                <h2>PSD To Shopify <i class="fa-solid fa-arrow-trend-up"></i></h2>
             </div>
             <div class="single_brand_service_slider">
-                <h2><a href="">PSD To Shopify</a></h2>
+                <h2>PSD To Shopify <i class="fa-solid fa-arrow-trend-up"></i></h2>
             </div>
         </div>
     </section>
@@ -122,47 +129,51 @@
 
                                 <div class="single_accordion">
                                   <h2  id="headingOne" data-bs-toggle="collapse" data-bs-target="#accordion_one" aria-expanded="true" aria-controls="accordion_one">
-                                    PSD to Shopify
+                                    <i class="fa-solid fa-layer-group"></i>PSD to Shopify
                                   </h2>
                                   <div id="accordion_one" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#service_accordian">
                                     <div class="accordion_body">
                                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam labore provident voluptatem, a iusto. Necessitatibus repudiandae maiores tempore saepe, eos nihil nisi consectetur, voluptatum nesciunt inventore dignissimos sint blanditiis!</p>
+                                      <a href="" class="read_more_btn">Read More</a>
                                     </div>
                                   </div>
                                 </div>
+
                                 <div class="single_accordion">
                                   <h2  id="titleTwo" data-bs-toggle="collapse" data-bs-target="#accordion_two" aria-expanded="false" aria-controls="accordion_two">
-                                    PSD to HTML
+                                    <i class="fa-solid fa-layer-group"></i>PSD to HTML
                                   </h2>
                                   <div id="accordion_two" class="accordion-collapse collapse" aria-labelledby="titleTwo" data-bs-parent="#service_accordian">
                                     <div class="accordion_body">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam labore provident voluptatem, a iusto. Necessitatibus repudiandae maiores tempore saepe, eos nihil nisi consectetur, voluptatum nesciunt inventore dignissimos sint blanditiis!</p>
+                                        <a href="" class="read_more_btn">Read More</a>
                                     </div>
                                   </div>
                                 </div>
                                 
                                 <div class="single_accordion">
-                                    <h2  id="titleTwo" data-bs-toggle="collapse" data-bs-target="#accordion_two" aria-expanded="false" aria-controls="accordion_two">
-                                        UI/UX Design & Development
+                                    <h2  id="titleThree" data-bs-toggle="collapse" data-bs-target="#accordion_three" aria-expanded="false" aria-controls="accordion_three">
+                                        <i class="fa-solid fa-layer-group"></i>UI/UX Design & Development
                                     </h2>
-                                    <div id="accordion_two" class="accordion-collapse collapse" aria-labelledby="titleTwo" data-bs-parent="#service_accordian">
+                                    <div id="accordion_three" class="accordion-collapse collapse" aria-labelledby="titleThree" data-bs-parent="#service_accordian">
                                       <div class="accordion_body">
                                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam labore provident voluptatem, a iusto. Necessitatibus repudiandae maiores tempore saepe, eos nihil nisi consectetur, voluptatum nesciunt inventore dignissimos sint blanditiis!</p>
+                                          <a href="" class="read_more_btn">Read More</a>
                                       </div>
                                     </div>
                                   </div>
                                   
                                 <div class="single_accordion">
-                                    <h2  id="titleTwo" data-bs-toggle="collapse" data-bs-target="#accordion_two" aria-expanded="false" aria-controls="accordion_two">
-                                        PSD to Wordpress
+                                    <h2  id="titleFour" data-bs-toggle="collapse" data-bs-target="#accordion_four" aria-expanded="false" aria-controls="accordion_four">
+                                        <i class="fa-solid fa-layer-group"></i>PSD to Wordpress
                                     </h2>
-                                    <div id="accordion_two" class="accordion-collapse collapse" aria-labelledby="titleTwo" data-bs-parent="#service_accordian">
+                                    <div id="accordion_four" class="accordion-collapse collapse" aria-labelledby="titleFour" data-bs-parent="#service_accordian">
                                       <div class="accordion_body">
                                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam labore provident voluptatem, a iusto. Necessitatibus repudiandae maiores tempore saepe, eos nihil nisi consectetur, voluptatum nesciunt inventore dignissimos sint blanditiis!</p>
+                                           <a href="" class="read_more_btn">Read More</a>
                                       </div>
                                     </div>
                                   </div>
-                                
                                 
                             </div>
                         </div>
@@ -172,8 +183,7 @@
                             <h4>Our Popular Services</h4>
                             <h2>Your One Stop Solution at WEBRITO</h2>
                             <p>So that no information is lost along the way and we know where to look for it, our preferred way of communicating is by Skype, Whatspp, Facebook, Phone calls or email</p>
-                            <button>Connect With Us</button>
-                            <button><a href="">Watch Video</a></button>
+                            <button class="play_btn" style="background-image: url(assets/img/btn/btn.png);"><a href=""><i class="fa-solid fa-play"></i></a></button>
                         </div>
                     </div>
                 </div>
@@ -997,23 +1007,24 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="section_padding footer_bg">
         <div class="footer_area">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-8">
+                    <div class="col-lg-7 col-md-7">
                         <div class="footer_left_content">
-                            <h2>Want to Discuss About Your Next Project?</h2>
+                            <h2>Want to Discuss About <br> Your Next Project?</h2>
                             <div class="footer_left_bottom_content">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-lg-4 col-md-4">
+                                        <div class="col-lg-6 col-md-6">
                                             <div class="footer_sbuscription_from">
+                                                <h2>Subscribe Newsletter</h2>
                                                 <input type="email" placeholder="info@webrito.com ">
                                                 <input type="submit" value="Susbscription">
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4">
+                                        <div class="col-lg-3 col-md-3">
                                             <div class="footer_menu">
                                                 <ul>
                                                     <li><a href="">About Us</a></li>
@@ -1023,7 +1034,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-4">
+                                        <div class="col-lg-3 col-md-3">
                                             <div class="footer_menu">
                                                 <ul>
                                                     <li><a href="">PSD To HTML</a></li>
@@ -1038,21 +1049,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
+                    <div class="col-lg-5 col-md-5">
                         <div class="footer_right_area_content">
                             <div class="footer_social_icon">
-
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                                <i class="fa-brands fa-slack"></i>
                             </div>
                             <div class="footer_contact_area">
                                 <h2>Contact Us</h2>
                                 <div class="footer_single_contact_info">
-                                    <h3>Call Us <span>+8801822050448 ( Call us from 08 am - 08 pm)</span></h3>
+                                    <h3><i class="fa-solid fa-phone"></i>Call Us <span>+8801822050448 ( Call us from 08 am - 08 pm)</span></h3>
                                 </div>
                                 <div class="footer_single_contact_info">
-                                    <h3>Email <span>Hello@webrito.com</span></h3>
+                                    <h3><i class="fa-regular fa-envelope"></i>Email <span>Hello@webrito.com</span></h3>
                                 </div>
                                 <div class="footer_single_contact_info">
-                                    <h3>11585 Jones Bridge Rd Ste 430, Johns Creek, GA 30022-7476</h3>
+                                    <h3><i class="fa-solid fa-location-dot"></i><p>11585 Jones Bridge Rd Ste 430, Johns Creek, GA 30022-7476</p></h3>
                                 </div>
                             </div>
                         </div>
@@ -1086,8 +1100,8 @@
 
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

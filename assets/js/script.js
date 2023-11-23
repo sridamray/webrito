@@ -18,12 +18,13 @@
 	$('.brand_service_slider').slick({
 		dots: false,
 		infinite: true,
-		speed: 500,
+		speed: 5000,
 		slidesToShow: 4,
 		slidesToScroll: 4,
-		autoplay:true,
-		autoplaySpeed:5000,
+		autoplay:false,
+		autoplaySpeed:0,
 		arrows:false,
+		cssEase: 'marquee',
 		pauseOnFocus:false,
 		pauseOnHover:false,
 		responsive: [

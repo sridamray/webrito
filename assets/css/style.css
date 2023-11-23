@@ -173,6 +173,18 @@ Service Slider
 	padding-top: 0;
 	margin-top: -94px;
 }
+.brand_service_slider .single_brand_service_slider{
+	animation: marquee 5s linear infinite;
+}
+@keyframes marquee {
+	0% {
+	  transform: translateX(100%);
+	}
+	100% {
+	  transform: translateX(-100%);
+	}
+  }
+  
 .single_brand_service_slider h2 {
 	font-size: 22px;
 	text-align: center;
@@ -188,6 +200,7 @@ Service Slider
 
 .brand_service_slider.slick-initialized.slick-slider {
 	text-align: center;
+	
 }
 
 .single_brand_service_slider h2 i {
@@ -402,6 +415,10 @@ Footer CSS
 	font-weight: 700;
 	line-height: 44px;
   }
+
+  .footer_area h2, .footer_area h3 {
+	color: var(--white);
+}
 
   
 .footer_single_contact_info h3 {

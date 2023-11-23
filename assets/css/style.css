@@ -318,6 +318,61 @@ Service Area Accordian
 	margin-left: 148px;
 }
 
+
+/* 
+Counter Area
+--------------------*/
+
+
+.row.counter_wrapper {
+	padding: 30px;
+	background: #F0EEFF;
+	border: 3px solid #BFBBE4;
+	box-shadow: 5px 7px 0 #BFBBE4;
+	border-radius: 24px;
+  }
+  .counter_content {
+	text-align: center;
+  }
+  .counter_wrap {
+	background: #5E43FF;
+	padding: 32px;
+	border-radius: 16px;
+  }
+  .counter_wrap p {
+	color: #fff;
+	opacity: .7;
+	line-height: 25px;
+  }
+  .single_counter_item {
+	text-align: center;
+  }
+  .single_counter_item h2 {
+	color: var(--white);
+	font-weight: 700;
+	font-size: 52px;
+}
+
+.counter_content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+  .counter_content h2 {
+	font-size: 48px;
+	font-weight: 700;
+	color: var(--black);
+	text-transform: capitalize;
+	line-height: 52px;
+  }
+  .counter_content a {
+	font-size: 24px;
+	color: var(--primary_color);
+	font-weight: 600;
+	line-height: 38px;
+}
+
+
 /* 
 Footer CSS
 --------------------*/

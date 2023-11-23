@@ -56,6 +56,11 @@
 		  // instead of a settings object
 		]
 	  });
+// Video Popup Script
+$('.play_video').magnificPopup({
+	type:'iframe'
+});
+
 					  
 
 

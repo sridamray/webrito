@@ -61,6 +61,159 @@ $('.play_video').magnificPopup({
 	type:'iframe'
 });
 
+//Project Slider 
+
+$('.project_slider_wrapper').slick({
+	infinite:true,
+	arrows:true,
+	slidesToShow: 2,
+	slidesToScroll: 2,
+	autoplay: false,
+	pauseOnHover:false,
+	autoplaySpeed: 2000,
+	responsive:[
+		{
+			breakpoint: 1024,
+			settings: {
+			  slidesToShow: 2,
+			  slidesToScroll: 1,
+			  infinite: true,
+			  dots: false,
+			  arrows:true,
+			}
+		  },
+	]
+  });
+
+  //Partner Slider 
+
+$('.brand_slider_one').slick({
+	infinite:true,
+	arrows:true,
+	slidesToShow: 6,
+	slidesToScroll: 1,
+	autoplay: false,
+	arrows:false,
+	pauseOnHover:false,
+	autoplaySpeed: 2000,
+	responsive:[
+		{
+			breakpoint: 1024,
+			settings: {
+			  slidesToShow: 4,
+			  slidesToScroll: 1,
+			  infinite: true,
+			  dots: false,
+			  arrows:true,
+			}
+		  },
+	]
+  });
+
+  //Partner Slider Two 
+
+$('.brand_slider_content_area_two').slick({
+	infinite:true,
+	arrows:true,
+	slidesToShow: 4,
+	slidesToScroll: 1,
+	autoplay: false,
+	arrows:false,
+	pauseOnHover:false,
+	autoplaySpeed: 2000,
+	responsive:[
+		{
+			breakpoint: 1024,
+			settings: {
+			  slidesToShow: 4,
+			  slidesToScroll: 1,
+			  infinite: true,
+			  dots: false,
+			  arrows:true,
+			}
+		  },
+	]
+  });
+
+  //Testimonial Slider ONe
+
+	$('.testimonial_slider_area_one').slick({
+		dots: false,
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay:false,
+		arrows:false,
+		pauseOnHover:false,
+		responsive: [
+		  {
+			breakpoint: 1024,
+			settings: {
+			  slidesToShow: 2,
+			  slidesToScroll: 1,
+			  infinite: true,
+			  dots: true
+			}
+		  },
+		  {
+			breakpoint: 600,
+			settings: {
+			  slidesToShow: 2,
+			  slidesToScroll: 1
+			}
+		  },
+		  {
+			breakpoint: 480,
+			settings: {
+			  slidesToShow: 1,
+			  slidesToScroll: 1
+			}
+		  }
+		  // You can unslick at a given breakpoint now by adding:
+		  // settings: "unslick"
+		  // instead of a settings object
+		]
+	  });
+  //Testimonial Slider ONe
+
+	$('.testimonial_slider_area_two').slick({
+		dots: false,
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay:false,
+		arrows:false,
+		pauseOnHover:false,
+		responsive: [
+		  {
+			breakpoint: 1024,
+			settings: {
+			  slidesToShow: 2,
+			  slidesToScroll: 1,
+			  infinite: true,
+			  dots: true
+			}
+		  },
+		  {
+			breakpoint: 600,
+			settings: {
+			  slidesToShow: 2,
+			  slidesToScroll: 1
+			}
+		  },
+		  {
+			breakpoint: 480,
+			settings: {
+			  slidesToShow: 1,
+			  slidesToScroll: 1
+			}
+		  }
+		  // You can unslick at a given breakpoint now by adding:
+		  // settings: "unslick"
+		  // instead of a settings object
+		]
+	  });
+		  
 					  
 
 

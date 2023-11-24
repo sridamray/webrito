@@ -9,7 +9,7 @@ Common CSS
 	font-weight: 500;
 	color: var(--body_text);
 	font-weight: 400;
-	line-height: 30px;
+	line-height: 26px;
  }
 
  :root {
@@ -33,6 +33,22 @@ Common CSS
  .section_padding{
 	padding: 80px 0;
  }
+
+ 
+.section_title h4 {
+  color: var(--primary_color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+}
+.section_title h2 {
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--heading_color);
+  text-align: ;
+  text-transform: capitalize;
+  line-height: 66px;
+}
 
 
 /* 
@@ -116,11 +132,12 @@ Header CTA Area
 	text-decoration: none;
 	color: #fff;
 	background: #5E43FF;
-	padding: 18px;
+	padding: 13px;
 	font-size: 18px;
 	font-weight: 600;
 	border-radius: 5px;
 	padding-left: 32px;
+	display: inline-block;
 }
  
 
@@ -129,7 +146,7 @@ Header CTA Area
 	color: #5E43FF;
 	padding: 10px;
 	border-radius: 5px;
-	margin-left: 5px;
+	margin-left: 15px;
 }
 .webrito-btn.bg_white_bordered {
 	background: var(--white);
@@ -174,7 +191,7 @@ Service Slider
 	margin-top: -94px;
 }
 .brand_service_slider .single_brand_service_slider{
-	animation: marquee 5s linear infinite;
+	animation: marquee 10s linear infinite;
 }
 @keyframes marquee {
 	0% {
@@ -373,6 +390,229 @@ Counter Area
 }
 
 
+
+/* 
+Project Css
+--------------------*/
+.single_project_slider_item img {
+	max-width: 100%;
+}
+
+.project_slider_area {
+	padding: 64px 0;
+  }
+  .single_project_slider_item {
+  }
+  .single_slider_content {
+	padding: 32px 40px;
+	border: 1px solid #E7ECF0;
+	border-radius: 16px;
+	margin-bottom: 24px;
+}
+  .single_slider_content p {
+	margin: 22px 0;
+  }
+  .single_slider_content.bottom_content {
+	margin-bottom: 0;
+	margin-top: 24px;
+}
+
+.single_project_slider_item{
+	animation: project 30s linear infinite;
+}
+@keyframes project {
+	0% {
+	  transform: translateX(-100%);
+	}
+	100% {
+	  transform: translateX(100%);
+	}
+  }
+  
+
+
+
+/* 
+WR: CTA Area
+--------------------*/
+
+
+
+  .section_padding.CTA_area {
+	background: var(--primary_color);
+	color: var(--white);
+	padding-bottom: 0;
+	padding-top: 47px;
+  }
+  .cta_content_left h2 {
+	font-size: 32px;
+	font-weight: 700;
+	color: var(--white);
+	line-height: 44px;
+  }
+  .cta_content_right {
+	display: table-cell;
+	vertical-align: middle;
+}
+  .cta_content_right p {
+	opacity: .8;
+	border-bottom: 1px solid var(--white);
+	padding-bottom: 47px;
+  }
+  .cta_content_right h2 {
+	color: var(--white);
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 36px;
+  }
+  .cta_content_right h2 span {
+	display: block;
+	font-size: 18px;
+	font-weight: 400;
+	opacity: .8;
+	margin-top: -7px;
+}
+
+  .webrito-btn.white_border {
+	border: 2px solid var(--white);
+	margin-top: 40px;
+  }
+  .cta_content_left {
+	display: table-cell;
+	vertical-align: middle;
+  }
+
+
+
+
+
+
+
+
+
+
+/* 
+WR: About Us
+--------------------*/
+
+.about_img {
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+}
+  .about_img .imge_blend {
+	position: absolute;
+	left: 0;
+	r0: ;
+	right: 0;
+	mix-blend-mode: color-burn;
+  }
+.about_img img {
+	max-width: 100%;
+  }
+
+  .about_area_content .section_title {
+	margin-bottom: 40px;
+  }
+  .about_area_content {
+	padding-left: 40px;
+  }
+  
+.single_about_area_content {
+	background: #F4F0ED;
+	padding: 24px;
+	position: relative;
+	padding-left: 80px;
+	margin-bottom: 19px;
+	border-radius: 6px;
+	transition: .3s all;
+  }
+  .single_about_area_content h2 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 34px;
+  }
+  .single_about_area_content i {
+	position: absolute;
+	left: 3%;
+	top: 13%;
+	color: var(--primary_color);
+	font-size: 40px;
+  }
+  .single_about_area_content a {
+
+	text-decoration: none;
+	color: var(--primary_color);
+	font-weight: 400;
+	line-height: ;
+	font-size: 16px;
+	line-height: 26px;
+  }
+  .single_about_area_content:hover {
+
+	background: var(--white);
+	box-shadow: 0px 20px 68px 0px rgba(5, 2, 19, 0.15);
+  }
+
+/* 
+Testimonial Slider
+--------------------*/
+
+.single_testimonial_slider {
+	background: #FFF;
+	margin: 9px;
+	padding: 32px;
+	border-radius: 16px;
+}
+
+.single_testimonial_slider p {
+	text-align: justify;
+	margin: 24px 0;
+  }
+  .section_padding.testimonial_area {
+	background: var(--secondary_color);
+  }
+  .testimonial_slider_area_one {
+	margin-bottom: 20px;
+	
+  }
+.testimonial_slider_area_one .single_testimonial_slider{
+	animation: marquee 30s linear infinite;
+}
+.testimonial_slider_area_two .single_testimonial_slider{
+	animation: marquee_right 30s linear infinite;
+}
+  .testimonail_author_area h3 {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 30px;
+  }
+  .testimonail_author_area h3 span {
+	display: block;
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--body_text);
+  }
+  .testimonail_author_area img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: ;
+	border-radius: 50px;
+}
+  .testimonail_author_area {
+	position: relative;
+	padding-left: 80px;
+	
+  }
+  @keyframes marquee_right {
+	0% {
+	  transform: translateX(-100%);
+	}
+	100% {
+	  transform: translateX(100%);
+	}
+  }
 /* 
 Footer CSS
 --------------------*/

@@ -213,7 +213,48 @@ $('.brand_slider_content_area_two').slick({
 		  // instead of a settings object
 		]
 	  });
-		  
+  //Award Slider
+
+	$('.awared_slider_area').slick({
+		dots: false,
+		infinite: true,
+		slidesToShow: 6,
+		slidesToScroll: 1,
+		autoplay:false,
+		arrows:false,
+		pauseOnHover:false,
+		responsive: [
+		  {
+			breakpoint: 1024,
+			settings: {
+			  slidesToShow: 4,
+			  slidesToScroll: 1,
+			  infinite: true,
+			  dots: true
+			}
+		  },
+		  {
+			breakpoint: 600,
+			settings: {
+			  slidesToShow: 2,
+			  slidesToScroll: 1
+			}
+		  },
+		  {
+			breakpoint: 480,
+			settings: {
+			  slidesToShow: 1,
+			  slidesToScroll: 1
+			}
+		  }
+		  // You can unslick at a given breakpoint now by adding:
+		  // settings: "unslick"
+		  // instead of a settings object
+		]
+	  });
+
+
+	 
 					  
 
 

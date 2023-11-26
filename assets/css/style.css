@@ -615,6 +615,144 @@ Testimonial Slider
   }
 
   /* 
+WR: Utilize Tools CSS
+--------------------*/
+.section_padding.utilize_tool_area {
+	padding-top: 160px;
+	padding-bottom: 350px;
+}
+.utitlize_wrap {
+	margin-top: 55px;
+	gap: 16px;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.utitlize_wrap .single_utilize {
+	padding: 12px 32px 12px 12px;
+	border-radius: 37px;
+	background: #f4f0ed;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 16px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-transition: 0.4s ease;
+	-o-transition: 0.4s ease;
+	transition: 0.4s ease;
+}
+.utitlize_wrap .single_utilize .utilize_img {
+	width: 45px;
+	height: 45px;
+	flex-shrink: 1;
+	border-radius: 50%;
+	background: white;
+	box-shadow: 0px 6px 40px rgba(0, 0, 0, 0.1);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.utitlize_wrap .single_utilize:hover {
+	background: var(--primary_color);
+}
+.utitlize_wrap .single_utilize .utilize_tag p {
+	font-size: 20px;
+	font-weight: 600;
+	transition: 0.4s;
+	margin: 0;
+}
+.utitlize_wrap .single_utilize:hover .utilize_tag p {
+	color: white;
+	cursor: pointer;
+}
+.utilize_hover {
+	top: 116%;
+	width: 750px;
+	padding: 28px 30px;
+	border-radius: 16px;
+	background: var(--white);
+	box-shadow: 0px -2px 120px rgba(5, 2, 19, 0.1);
+	gap: 30px;
+	left: -50%;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.4s ease-in;
+	z-index: 3;
+	position: absolute;
+	display: flex;
+}
+.utitlize_wrap .single_utilize:hover .utilize_hover {
+	visibility: visible;
+	opacity: 1;
+	top: 115%;
+}
+.utilize_hover .hover_content h4 {
+	color: var(--heading_color);
+	font-weight: 700;
+	line-height: 140%;
+	margin-bottom: 15px;
+	cursor: pointer;
+	font-size: 32px;
+}
+.utilize_hover .hover_img {
+	width: 110px;
+	height: 110px;
+	background: #f0eeff;
+	border-radius: 24px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+.utilize_hover .hover_img span {
+	width: 64px !important;
+	height: 64px !important;
+}
+
+  /* 
+WR: Award CSS
+--------------------*/
+.section_padding.awared_area {
+	background: linear-gradient(#F4F0ED, #F4F0ED00, #F4F0ED);
+	
+}
+.single_awared_item img {
+	max-width: 100%;
+	opacity: .5;
+	transition: .3s all;
+  }
+  .single_awared_item{
+	animation: marquee_right 15s linear infinite;
+  }
+  
+  .single_awared_item img:hover {
+	opacity: 1;
+  }
+  .awared_text {
+	text-align: center;
+	margin-top: 60px;
+	font-size: 18px;
+	font-weight: 400;
+}
+  
+.awared_text p span {
+	color: var(--primary_color);
+	text-decoration: underline;
+  }
+
+ 
+
+
+
+
+
+
+
+
+
+  /* 
 WR: Working Process CSS
 --------------------*/
 
@@ -824,8 +962,98 @@ WR: CTA Area Css
 /* 
 WR: Faq Area CSS
 --------------------*/
+.faq_area_tab_content .nav {
+	border-radius: 16px;
+	margin-right: 50px;
+	position: relative;
+	height: 100vh;
+	width: 26%;
+}
+.tab_list {
+	background: #F4F0ED;
+	border-radius: 16px;
+}
+  .faq_area_tab_content button {
+	font-size: 24px;
+	font-weight: 600;
+	color: var(--heading_color);
+	padding: 22px 42px;
+  }
+  .faq_area_tab_content {
+	margin-top: 64px;
+  }
+  .faq_area_tab_content .nav-link.active {
+	background: var(--secondary_color);
+	color: var(--heading_color);
+	display: block;
+	width: 100%;
+	text-align: left;
+}
+.faq_area_tab_content .tab_list .nav-link {
+	width: 100%;
+	text-align: left;
+}
+  .faq_area_tab_content button.nav-link:hover {
+	color: var(--primary_color);
+}
 
 
+.single_faq_tab_content {
+	background: #F4F0ED;
+	padding: 25px 32px;
+	margin-bottom: 32px;
+	border-radius: 16px;
+  }
+  .single_faq_tab_content.accordion-item:first-of-type {
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+}
+  .single_faq_tab_content button {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 42px;
+	background: transparent;
+	padding: 0;
+	color: var(--heading_color);
+}
+.single_faq_tab_content:not(.collapsed){
+	box-shadow: 9px 9px 0 #D9CDC5;
+
+}
+.single_faq_tab_content .accordion-button:not(.collapsed){
+	color: var(--primary_color);
+}
+.single_faq_tab_content .accordion-button:not(.collapsed){
+	background-color: transparent;
+}
+.single_faq_tab_content .accordion-button:focus{
+	border-color:transparent;
+	box-shadow: none;
+}
+
+
+.faq_area_tab_content .tab-content {
+	width: 73%;
+}
+.single_faq_tab_content  .accordion-body {
+	padding-left: 0;
+	padding-right: 0;
+	text-align: justify;
+}
+
+.chat_area {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: var(--primary_color);
+	padding: 60px 29px;
+}
+.chat_area h2 {
+	font-size: 32px;
+	color: var(--white);
+	font-weight: 700;
+	line-height: 42px;
+}
 
 /* 
 WR: Blog Area css

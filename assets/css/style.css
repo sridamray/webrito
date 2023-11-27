@@ -68,7 +68,7 @@ Header Area CSs
 .header_menu_area .main_menu {
 	text-align: center;
 	background-color: #fff;
-	padding: 8px;
+	padding: 12px 8px;
 	border-radius: 5px;
 }
 
@@ -115,18 +115,19 @@ Header Area CSs
 /* 
 Header CTA Area
 --------------------*/
-
 .header_cta .icon {
 	background: #fff;
 	font-size: 18px;
-	padding: 14px 20px;
+	height: 64px;
 	border-radius: 10px;
 	display: inline-block;
 	color: #000;
 	margin-right: 16px;
 	box-shadow: 0 0 5px #ddd;
-  }
-
+	width: 64px;
+	line-height: 64px;
+	text-align: center;
+}
 
   .webrito-btn {
 	text-decoration: none;
@@ -182,6 +183,18 @@ Hero Area Css
 	
 	margin-right: 15px;
 }
+
+
+.hero_content_lft {
+	position: relative;
+  }
+  .hero_content_lft span.icon {
+	position: absolute;
+	top: 25%;
+	right: 0;
+	background: ;
+	fill: ;
+  }
 
 /* 
 Service Slider
@@ -392,8 +405,22 @@ Counter Area
 
 
 /* 
+WR: Brand Slider
+--------------------*/
+
+.brand_single_slider_content_one  img {
+	width: 100%;
+  }
+
+
+
+
+/* 
 Project Css
 --------------------*/
+.project_area {
+	position: relative;
+  }
 .single_project_slider_item img {
 	max-width: 100%;
 }
@@ -401,8 +428,7 @@ Project Css
 .project_slider_area {
 	padding: 64px 0;
   }
-  .single_project_slider_item {
-  }
+  
   .single_slider_content {
 	padding: 32px 40px;
 	border: 1px solid #E7ECF0;
@@ -418,8 +444,32 @@ Project Css
 }
 
 .single_project_slider_item{
-	animation: project 30s linear infinite;
 }
+
+
+  .project_area .slick-arrow {
+	position: absolute;
+	right: 0;
+	bottom: -19%;
+	background: var(--white);
+	height: 72px;
+	width: 72px;
+	text-align: center;
+	line-height: 72px;
+	color: var(--primary_color);
+	font-size: 26px;
+	border-radius: 16px;
+	transition: .3s all;
+	box-shadow: 0 0 10px var(--primary_color);
+  }
+  .project_area .slick-prev.slick-arrow {
+	right: auto;
+	left: 88%;
+  }
+  .project_area .slick-arrow:hover {
+	background: var(--primary_color);
+	color: var(--white);
+  }
 @keyframes project {
 	0% {
 	  transform: translateX(-100%);
@@ -653,6 +703,11 @@ WR: Utilize Tools CSS
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+}
+.utitlize_wrap .single_utilize .utilize_img span {
+	height: 24px;
+	width: 24px;
+	line-height: 24px;
 }
 .utitlize_wrap .single_utilize:hover {
 	background: var(--primary_color);
@@ -897,7 +952,9 @@ WR: Why Choose CSS
 	padding: 64px 42px;
 	border-radius: 16px;
 	margin-right: 16px;
+	position: relative;
   }
+
   .why_message_box h2 {
 	font-size: 56px;
 	color: var(--white);
@@ -905,9 +962,21 @@ WR: Why Choose CSS
 	line-height: 66px;
 	border-radius: ;
   }
+  .why_message_box .message {
+	position: absolute;
+	right: 6%;
+	top: 35%;
+	opacity: .5;
+  }
+  .why_message_box .phone_icon {
+	position: absolute;
+	left: 13%;
+	bottom: 12%;
+  }
   .why_box_content {
 	margin-top: 72px;
   }
+  
   .single_box_content h2 {
 	font-size: 24px;
 	color: ;
@@ -1045,14 +1114,26 @@ WR: Faq Area CSS
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	background: var(--primary_color);
-	padding: 60px 29px;
+	background: #322580;
+	padding: 64px 29px;
+	padding-bottom: 100px;
+	border-radius: 15px;
 }
 .chat_area h2 {
 	font-size: 32px;
 	color: var(--white);
 	font-weight: 700;
 	line-height: 42px;
+}
+.chat_area span {
+	position: absolute;
+	background: var(--secondary_color);
+	height: 72px;
+	width: 72px;
+	text-align: center;
+	line-height: 72px;
+	border-radius: 16px;
+	right: 2%;
 }
 
 /* 

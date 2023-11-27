@@ -12,6 +12,14 @@
 			$("#header-sticky").addClass("header-sticky");
 		}
 	})//
+  //Counter Scrript
+
+  jQuery(document).ready(function($) {
+	$('.counter_item').counterUp({
+		delay: 10,
+		time: 1000
+	});
+})
 
 	//Slider One
 
@@ -66,6 +74,8 @@ $('.play_video').magnificPopup({
 $('.project_slider_wrapper').slick({
 	infinite:true,
 	arrows:true,
+	prevArrow: `<div class="slick-prev"><i class="fa-solid fa-arrow-right fa-rotate-180"></i></div>`,
+	nextArrow: `<div class="slick-next"><i class="fa-solid fa-arrow-right"></i></div>`,
 	slidesToShow: 2,
 	slidesToScroll: 2,
 	autoplay: false,
@@ -253,7 +263,8 @@ $('.brand_slider_content_area_two').slick({
 		]
 	  });
 
-
+	
+	
 	 
 					  
 

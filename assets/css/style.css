@@ -11,6 +11,9 @@ Common CSS
 	font-weight: 400;
 	line-height: 26px;
  }
+ body, html {
+    overflow-x: hidden;
+}
 
  :root {
   --body_font: 16px;
@@ -127,20 +130,37 @@ Header CTA Area
 	width: 64px;
 	line-height: 64px;
 	text-align: center;
+	overflow: hidden;
 }
 
-  .webrito-btn {
+.webrit_btn_wrap {
 	text-decoration: none;
-	color: #fff;
 	background: #5E43FF;
 	padding: 13px;
-	font-size: 18px;
-	font-weight: 600;
 	border-radius: 5px;
 	padding-left: 32px;
 	display: inline-block;
+	height: 64px;
+	position: relative;
+	overflow: hidden;
 }
- 
+.webrito-btn {
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff;
+	text-decoration: none;
+	line-height: 28px;
+	transition: .3s ease;
+	transform: translateY(0px);
+}
+
+.webrit_btn_wrap.bg_white_bordered .webrito-btn {
+    color: var(--heading_color);
+}
+.webrit_btn_wrap.bg_white_bordered .webrito-btn i {
+    background: var(--primary_color);
+    color: var(--white);
+}
 
   .webrito-btn i {
 	background: #fff;
@@ -149,9 +169,8 @@ Header CTA Area
 	border-radius: 5px;
 	margin-left: 15px;
 }
-.webrito-btn.bg_white_bordered {
+.webrit_btn_wrap.bg_white_bordered {
 	background: var(--white);
-	color: var(--heading_color);
 	border: 2px solid var(--primary_color);
 }
 
@@ -159,6 +178,30 @@ Header CTA Area
 	background: var(--primary_color);
 	color: var(--white);
 }
+.webrito-btn .previous-text {
+    display: block;
+    transition: .5s ease;
+    margin-bottom: 50px;
+}
+.webrit_btn_wrap .hover_text {
+	display: block;
+	margin-left: -16px;
+	transition: .5s all;
+}
+  .webrit_btn_wrap .hover_text i {
+	margin-left: 0;
+	margin-right: 15px;
+  }
+
+  .webrit_btn_wrap:hover .webrito-btn .previous-text {
+    transform: translateX(200px);
+}
+.webrit_btn_wrap:hover .webrito-btn .hover_text {
+
+    transform: translateY(-87px);
+}
+
+
 /* 
 Hero Area Css 
 --------------------*/
@@ -654,7 +697,11 @@ WR: CTA Area
 /* 
 WR: About Us
 --------------------*/
-
+.about_rtl {
+    text-align: left;
+    height: 475px;
+    overflow-y: auto;
+}
 .about_img {
 	position: relative;
 	display: table-cell;
@@ -1142,13 +1189,17 @@ WR: CTA Area Css
 	margin-bottom: 50px;
   }
 
-  .webrito-btn.cta_btn {
-	background: var(--secondary_color);
+  .webrit_btn_wrap.cta_btn {
+    background: var(--secondary_color);
+}
+.webrit_btn_wrap.cta_btn .webrito-btn {
 	color: var(--heading_color);
-  }
-  .webrito-btn.cta_btn i {
-	color: var(--heading_color);
-  }
+}
+.webrit_btn_wrap.cta_btn .webrito-btn i {
+    color: var(--heading_color);
+}
+
+
 
 
 
@@ -1209,7 +1260,7 @@ WR: Faq Area CSS
 	padding: 0;
 	color: var(--heading_color);
 }
-.single_faq_tab_content:not(.collapsed){
+.single_faq_tab_content[aria-expanded="true"]{
 	box-shadow: 9px 9px 0 #D9CDC5;
 
 }

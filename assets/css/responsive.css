@@ -1,0 +1,29 @@
+@media (max-width: 992px){
+.hero_content_lft h2 {
+        font-size: 74px;
+        line-height: 95px;
+        margin-bottom: 84px;
+    }
+    .header_btn_wrap {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .single_content_item {
+        width: 296px;
+    }
+    .working_step {
+        gap: 90px;
+        row-gap: 200px;
+    }
+    .cta_consulting_content h2 {
+        font-size: 43px;
+        line-height: 53px;
+    }
+}
+
+
+
+
+
+
+}

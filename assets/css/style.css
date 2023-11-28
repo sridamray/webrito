@@ -69,10 +69,10 @@ Header Area CSs
 	
 }
 .header_menu_area .main_menu {
-	text-align: center;
-	background-color: #fff;
-	padding: 12px 8px;
-	border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    padding: 2px 8px;
+    border-radius: 5px;
 }
 
 
@@ -84,17 +84,39 @@ Header Area CSs
 	margin: 8px 0;
 	padding: 0;
 	list-style: none;
+	margin-bottom: 0;
 }
   .header_menu_area .main_menu ul li {
 	display: inline-block;
   }
   .header_menu_area .main_menu ul a {
-	text-decoration: none;
-	color: #03111E;
-	font-size: 18px;
-	font-weight: 500;
-	font-family: 'Hanken Grotesk', sans-serif;
-	padding: 10px 16px;
+    text-decoration: none;
+    color: #03111E;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: block;
+    padding: 0 16px;
+    height: 48px;
+    line-height: 48px;
+	overflow: hidden;
+}
+.header_menu_area .main_menu ul a span {
+    display: block;
+}
+.header_menu_area .main_menu ul a span.default{
+	margin-bottom: 60px;
+	transition: .3s all;
+}
+.header_menu_area .main_menu ul a:hover span.default{
+	transform: translateY(-150px);
+}
+
+.header_menu_area .main_menu ul a:hover span.hover{
+	transition: .3s all;
+}
+.header_menu_area .main_menu ul a:hover span.hover{
+	transform: translateY(-109px);
 }
 .header_menu_area .main_menu ul a:hover {
 	transition: .3s ease-in-out;
@@ -119,18 +141,39 @@ Header Area CSs
 Header CTA Area
 --------------------*/
 .header_cta .icon {
-	background: #fff;
-	font-size: 18px;
-	height: 64px;
-	border-radius: 10px;
-	display: inline-block;
-	color: #000;
-	margin-right: 16px;
-	box-shadow: 0 0 5px #ddd;
-	width: 64px;
-	line-height: 64px;
-	text-align: center;
-	overflow: hidden;
+    background: rgb(255, 255, 255);
+    font-size: 18px;
+    height: 64px;
+    border-radius: 10px;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    margin-right: 16px;
+    box-shadow: rgb(221, 221, 221) 0px 0px 5px;
+    width: 64px;
+    line-height: 64px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: .3s all;
+	z-index: 1;
+}
+.header_cta .icon:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--primary_color);
+    content: "";
+    transform: scale(0);
+	transition: .3s all;
+	z-index: -1;
+}
+.header_cta .icon:hover:after{
+transform: scale(1);
+}
+.header_cta .icon:hover{
+	color: var(--white);
 }
 
 .webrit_btn_wrap {
@@ -145,13 +188,14 @@ Header CTA Area
 	overflow: hidden;
 }
 .webrito-btn {
-	font-size: 18px;
-	font-weight: 600;
-	color: #fff;
-	text-decoration: none;
-	line-height: 28px;
-	transition: .3s ease;
-	transform: translateY(0px);
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    line-height: 28px;
+    transition: .3s ease;
+    transform: translateY(0px);
+    display: block;
 }
 
 .webrit_btn_wrap.bg_white_bordered .webrito-btn {
@@ -187,6 +231,7 @@ Header CTA Area
 	display: block;
 	margin-left: -16px;
 	transition: .5s all;
+	text-align: left;
 }
   .webrit_btn_wrap .hover_text i {
 	margin-left: 0;
@@ -194,7 +239,7 @@ Header CTA Area
   }
 
   .webrit_btn_wrap:hover .webrito-btn .previous-text {
-    transform: translateX(200px);
+    transform: translateY(-200px);
 }
 .webrit_btn_wrap:hover .webrito-btn .hover_text {
 
@@ -222,10 +267,11 @@ Hero Area Css
 	color: var(--primary_color);
   }
 
-  .hero_content_lft .webrito-btn {
-	
-	margin-right: 15px;
+  .hero_content_lft .webrit_btn_wrap {
+    margin-right: 15px;
 }
+
+
 
 
 .hero_content_lft {
@@ -235,8 +281,6 @@ Hero Area Css
 	position: absolute;
 	top: 25%;
 	right: 0;
-	background: ;
-	fill: ;
   }
 
 /* 
@@ -259,41 +303,61 @@ Service Slider
   }
   
 .single_brand_service_slider h2 {
-	font-size: 22px;
-	text-align: center;
-	background: var(--secondary_color);
-	padding: 35px 56px;
-	border-radius: 57px;
-	display: inline-block;
-	position: relative;
-	transition: .3s all;
+    font-size: 22px;
+    text-align: center;
+    background: var(--secondary_color);
+    padding: 35px 32px;
+    border-radius: 57px;
+    position: relative;
+    transition: .3s all;
+    width: 79%;
+    cursor: pointer;
 }
-
-
+.single_brand_service_slider h2:hover {
+	background: var(--heading_color);
+	color: var(--white);
+}
 
 .brand_service_slider.slick-initialized.slick-slider {
 	text-align: center;
 	
 }
 
-.single_brand_service_slider h2 i {
-	position: absolute;
-	right: -30%;
-	background: var(--secondary_color);
-	padding: 35px;
-	top: 0;
-	border-radius: 57px;
+.single_brand_service_slider h2 .icon_area {
+    position: absolute;
+    right: -27%;
+    background: var(--secondary_color);
+    border-radius: 57px;
+    transition: .3s all;
+    cursor: pointer;
+    overflow: hidden;
+    height: 94px;
+    width: 94px;
+    text-align: center;
+    line-height: 94px;
+    top: 0;
+}
+.single_brand_service_slider h2 span.icon_wrap span.default {
+    display: block;
+    margin-bottom: 60px;
 	transition: .3s all;
 }
-.single_brand_service_slider h2:hover i{
+.single_brand_service_slider h2 span.icon_wrap span.hover{
+	transition: .3s all;
+	display: block;
+}
+.single_brand_service_slider h2:hover .icon_area {
 background: var(--heading_color);
 }
-
-
-  .single_brand_service_slider h2:hover {
-	background: var(--heading_color);
-	color: var(--white);
+.single_brand_service_slider h2:hover span.icon_wrap span.default{
+	transform: translateY(-100px);
+	margin-bottom: 0;
 }
+.single_brand_service_slider h2:hover span.icon_wrap span.hover{
+	transform: translateY(-100px);
+	
+}
+
 
 
 /* 
@@ -314,6 +378,14 @@ Service Area Accordian
 	position: relative;
 	text-align: left;
 }
+@keyframes marquee_top {
+	0% {
+	  transform: translateY(-100%);
+	}
+	100% {
+	  transform: translateY(100%);
+	}
+  }
   .single_accordion {
 	padding: 24px 12px;
 	background: #CCF4EC;
@@ -324,6 +396,8 @@ Service Area Accordian
 	color: var(--heading_color);
 	text-align: left;
 }
+
+
 
 .single_accordion[aria-expanded="true"]:nth-child(n+1){
 	box-shadow: 9px 10px #7CCABA;

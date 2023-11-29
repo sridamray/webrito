@@ -80,6 +80,7 @@ $('.project_slider_wrapper').slick({
 	slidesToScroll: 2,
 	autoplay: false,
 	pauseOnHover:false,
+	variableWidth:true,
 	autoplaySpeed: 2000,
 	responsive:[
 		{

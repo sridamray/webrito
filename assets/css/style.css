@@ -1042,6 +1042,20 @@ WR: Utilize Tools CSS
 	-o-transition: 0.4s ease;
 	transition: 0.4s ease;
 }
+.utitlize_wrap  .single_utilize:after {
+    position: absolute;
+    left: 50%;
+    bottom: -36%;
+    height: 25px;
+    width: 25px;
+    content: "";
+    margin-left: -25%;
+    transform: rotate(45deg);
+    background: var(--white);
+    box-shadow: rgba(5, 2, 19, 0.1) 0px -2px 120px;
+	opacity: 0;
+	transition: .3s all;
+}
 .utitlize_wrap .single_utilize .utilize_img {
 	width: 45px;
 	height: 45px;
@@ -1091,6 +1105,9 @@ WR: Utilize Tools CSS
 	visibility: visible;
 	opacity: 1;
 	top: 115%;
+}
+.utitlize_wrap  .single_utilize:hover:after{
+	opacity: 1;
 }
 .utilize_hover .hover_content h4 {
 	color: var(--heading_color);
@@ -1769,6 +1786,7 @@ Footer CSS
 	line-height: 54px;
 	margin-bottom: 80px;
 }
+
 .footer_sbuscription_from h2 {
 	color: var(--White, #FFF);
 	font-family: Plus Jakarta Sans;
@@ -1778,33 +1796,58 @@ Footer CSS
 	line-height: 44px;
 	margin-bottom: 10px;
 }
-
+.subscription_area {
+    margin-right: 40px;
+	margin-top: 37px;
+}
 .footer_sbuscription_from input {
 	display: inline-block;
   }
   .footer_sbuscription_from input[type="email"] {
-	width: 70%;
-	padding: 11px 20px;
-	border-radius: 50px;
-	background: transparent;
-	color: var(--white);
-	border: 1px solid #fff;
+    width: 100%;
+    padding: 14px 24px;
+    border-radius: 50px;
+    background: transparent;
+    color: var(--white);
+    border: 1px solid #fff;
+    opacity: .2;
+    padding-left: 50px;
 }
-  
+.subscription_area .form__label {
+    transform: translate(53px, -42px);
+}
   .footer_sbuscription_from input:focus {
 	outline: none;
   }
   .footer_sbuscription_from input[type="submit"] {
-	width: 35%;
-	font-size: 13px;
-	padding: 15px 14px;
-	border-radius: 50px;
-	margin-left: -57px;
-	border: none;
-	color: var(--heading_color);
-	background: var(--secondary_color);
-	font-weight: 600;
+    font-size: 16px;
+    padding: 15px 24px;
+    border-radius: 50px;
+    margin-left: -57px;
+    border: none;
+    color: var(--heading_color);
+    background: var(--secondary_color);
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: 600;
+    border: none;
+	transition: .3s all;
 }
+.footer_sbuscription_from input[type="submit"]:hover {
+    background: var(--primary_color);
+    color: var(--white);
+}
+
+.subscription_area .s_input svg {
+    top: 20%;
+}
+
+.subscription_area .form__input:focus + .form__label,  .subscription_area .form__input:not(:placeholder-shown) + .form__label {
+	transform: translateY(-5.5rem) scale(1);
+	color: var(--white);
+ }
 
 .footer_menu ul {
 	margin: 0;
@@ -1812,19 +1855,33 @@ Footer CSS
 	list-style: none;
   }
   .footer_menu li {
-	margin-bottom: 24px;
+	margin-bottom: 10px;
   }
 
   .footer_menu li a {
-	text-decoration: none;
-	color: var(--white);
-	font-size: 16px;
-	font-weight: 400;
-	transition: .3s all;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    transition: .3s all;
+    height: 29px;
+    display: inline-block;
+    overflow: hidden;
+}
+.footer_menu li a span {
+    display: block;
+}
+.footer_menu li a span.normal, .footer_menu li span.hover{
+	transition: .3s ease-in-out;
+}
+.footer_menu li a:hover span.normal {
+    transform: translateY(-30px);
+}
+.footer_menu li a:hover span.hover {
+    transform: translateY(-20px);
 }
 .footer_menu li a:hover {
-	padding-left: 3px;
-	transition: 0.3s ease-in-out;
+	transition: 0.3s ease;
 	opacity: .7;
 }
 
@@ -1843,8 +1900,10 @@ Footer CSS
 	transition: .3s all;
 	cursor: pointer;
 }
+
 .footer_social_icon i:hover{
 	background: var(--secondary_color);
+	transform: rotate(360deg);
 }
   .footer_social_icon {
 	margin-bottom: 30px;
@@ -1877,18 +1936,26 @@ Footer CSS
 	margin-top: 9px;
   }
   .footer_single_contact_info h3 i {
-	position: absolute;
-	left: 0;
-	top: 0;
-	background: var(--secondary_color);
-	height: 56px;
-	width: 56px;
-	line-height: 56px;
-	text-align: center;
-	border-radius: 28px;
-	font-size: 18px;
-	color: var(--heading_color);
-  }
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--secondary_color);
+    height: 56px;
+    width: 56px;
+    line-height: 56px;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 18px;
+    color: var(--heading_color);
+    transition: .3s all;
+    cursor: pointer;
+	border: 1px solid #fff;
+}
+.footer_single_contact_info h3 i:hover {
+    background: var(--primary_color);
+    border: 1px solid var(--white);
+    color: var(--white);
+}
   .footer_single_contact_info {
 	margin-bottom: 32px;
   }
@@ -1897,3 +1964,78 @@ Footer CSS
 	font-size: 20px;
 	line-height: 29px;
   }
+  .footer_bottom_content {
+    display: flex;
+    justify-content: space-between;
+}
+.s_input {
+    position: relative;
+}
+
+.s_input svg {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+}
+
+
+.single_utilize:after {
+    position: absolute;
+    left: 50%;
+    bottom: -36%;
+    height: 25px;
+    width: 25px;
+    content: "";
+    margin-left: -25%;
+    transform: rotate(45deg);
+    background: var(--white);
+    box-shadow: rgba(5, 2, 19, 0.1) 0px -2px 120px;
+}
+
+.footer_bottom_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 15px;
+    margin-top: 100px;
+	position: relative;
+	z-index: 1;
+}
+.footer_bottom_content:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    content: "";
+    z-index: -1;
+    opacity: .1;
+}
+.footer_bottom_left_content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer_bottom_left_content li {
+    display: inline-block;
+}
+.footer_bottom_left_content ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 64px;
+    opacity: .7;
+    transition: .3s all;
+}
+
+.footer_bottom_right_content p {
+    margin-bottom: 0;
+    opacity: .7;
+}
+
+.footer_bottom_left_content ul li a:hover {
+    opacity: 1;
+}
+

@@ -68,7 +68,7 @@ Header Area CSs
 	padding: 20px 0;
 	
 }
-.header_menu_area .main_menu {
+.header_menu_area .menu {
     text-align: center;
     background-color: #fff;
     padding: 2px 8px;
@@ -80,16 +80,16 @@ Header Area CSs
 	margin-top: 15px;
 	padding: 15px 0;
 }
-  .header_menu_area .main_menu ul {
+  .header_menu_area .menu ul {
 	margin: 8px 0;
 	padding: 0;
 	list-style: none;
 	margin-bottom: 0;
 }
-  .header_menu_area .main_menu ul li {
+  .header_menu_area .menu ul li {
 	display: inline-block;
   }
-  .header_menu_area .main_menu ul a {
+  .header_menu_area .menu ul a {
     text-decoration: none;
     color: #03111E;
     font-size: 18px;
@@ -101,24 +101,24 @@ Header Area CSs
     line-height: 48px;
 	overflow: hidden;
 }
-.header_menu_area .main_menu ul a span {
+.header_menu_area .menu ul a span {
     display: block;
 }
-.header_menu_area .main_menu ul a span.default{
+.header_menu_area .menu ul a span.default{
 	margin-bottom: 60px;
 	transition: .3s all;
 }
-.header_menu_area .main_menu ul a:hover span.default{
+.header_menu_area .menu ul a:hover span.default{
 	transform: translateY(-150px);
 }
 
-.header_menu_area .main_menu ul a:hover span.hover{
+.header_menu_area .menu ul a:hover span.hover{
 	transition: .3s all;
 }
-.header_menu_area .main_menu ul a:hover span.hover{
+.header_menu_area .menu ul a:hover span.hover{
 	transform: translateY(-109px);
 }
-.header_menu_area .main_menu ul a:hover {
+.header_menu_area .menu ul a:hover {
 	transition: .3s ease-in-out;
 	background: #F0EEFF;
 	color: #5E43FF;
@@ -136,6 +136,52 @@ Header Area CSs
 	z-index: 999;
 	margin-top: 0;
 }
+/* Sub Menu CSS */
+.header_menu_area .menu ul li.menu-item-has-children{
+	position: relative;
+	transition: .3s all;
+	
+}
+.header_menu_area .menu ul li.menu-item-has-children:hover .sub-menu{
+	transform: scaleY(1);
+	margin-top: 58.5px;
+}
+.header_menu_area .menu ul li.menu-item-has-children .sub-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    background: var(--white);
+    width: 200px;
+    text-align: left;
+    padding: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    transform: scaleY(0);
+    transform-style: PRESERVE-3D;
+    transition: .5s all;
+}
+
+.header_menu_area .menu ul li.menu-item-has-children > a:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: auto;
+    content: "+";
+	transition: .3s all;
+}
+.header_menu_area .menu ul li.menu-item-has-children:hover > a:after{
+	display: none;
+}
+.header_menu_area .menu ul li.menu-item-has-children .sub-menu li{
+	display: block;
+}
+
+
+
+
 
 /* 
 Header CTA Area

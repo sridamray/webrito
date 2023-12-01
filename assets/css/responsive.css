@@ -1,29 +1,124 @@
-@media (max-width: 992px){
-.hero_content_lft h2 {
+
+@media (min-width: 1200px) and (max-width: 1400px){
+    .hero_content_lft h2 {
         font-size: 74px;
         line-height: 95px;
         margin-bottom: 84px;
+    }
+    .hero_content_lft span.icon {
+        top: 20%;
     }
     .header_btn_wrap {
         padding-left: 0;
         padding-right: 0;
     }
-    .single_content_item {
-        width: 296px;
+    .single_brand_service_slider h2 {
+        font-size: 16px;
     }
-    .working_step {
-        gap: 90px;
-        row-gap: 200px;
+    .single_brand_service_slider h2 .icon_area {
+        height: 70px;
+        width: 70px;
+        line-height: 70px;
+        top: 10%;
     }
-    .cta_consulting_content h2 {
-        font-size: 43px;
-        line-height: 53px;
+    .single_accordion h2 {
+        font-size: 25px;
     }
+    .single_counter_item h2 {
+        font-size: 38px;
+    }
+    .counter_wrap p {
+        line-height: 21px;
+        font-size: 15px;
+    }
+    .counter_content h2 {
+        font-size: 36px;
+        margin-bottom: 7px;
+    }
+
+    .brand_slider_one {
+        margin-bottom: 40px;
+    }
+    .cta_content_left h2 {
+        font-size: 22px;
+        line-height: 33px;
+    }
+    .single_brand_service_slider h2 .icon_area {
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+        top: 10%;
+    }
+
+    .single_brand_service_slider h2:hover span.icon_wrap span.hover {
+        transform: translateY(-80px);
+    }
+    
+  
+
+
+}
+
+@media only screen and (min-width: 992px) and (max-width:1199px){
+    .header_menu_area .menu ul a {
+        font-size: 16px;
+    }
+.hero_content_lft h2 {
+    font-size: 50px;
+    line-height: 66px;
+}
+.hero_content_lft span.icon {
+    top: 13%;
+}
+.header_btn_wrap {
+    padding-left: 0;
+}
+.header_cta .icon {
+    font-size: 16px;
+    margin-right: 5px;
+}
+.webrit_btn_wrap {
+    padding-left: 20px;
+}
+.webrito-btn {
+    font-size: 16px;
+}
+.webrito-btn i {
+    padding: 8px;
+    margin-left: 5px;
+}
+.webrit_btn_wrap .hover_text {
+    margin-left: -7px;
+}
+.webrit_btn_wrap:hover .webrito-btn .hover_text {
+    transform: translateY(-80px);
+}
+
+.single_brand_service_slider h2 {
+    font-size: 16px;
+}
+.single_brand_service_slider h2 .icon_area {
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    top: 10%;
+}
+.single_brand_service_slider h2:hover span.icon_wrap span.hover {
+    transform: translateY(-75px);
 }
 
 
 
-
-
+}
+@media only screen and (min-width: 767px) and (max-width:991px){
+    .hero_content_lft h2 {
+        font-size: 40px;
+        line-height: 62px;
+    }
+    .hero_content_lft span.icon {
+        top: 10%;
+    }
 
 }
+
+
